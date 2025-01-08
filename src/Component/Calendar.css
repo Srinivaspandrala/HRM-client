@@ -1,0 +1,121 @@
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: #000;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+/* Calendar header styles */
+.calendar-header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.calendar-render{
+    margin: 5px 60px 50px 260px;
+}
+
+/* Custom button styles for the calendar */
+.rbc-btn-group.rbc-today-btn {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.rbc-btn-group.rbc-today-btn:hover {
+    background-color: #1E90FF;
+    font-weight: bold;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px #00000033; 
+}
+
+/* Event Form styles */
+.event-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.event-form input,
+.event-form select {
+    padding: 2px 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    height: 28px;
+    font-size: 1rem;
+    outline: none; 
+    background-color: #ffffff;
+    transition: all 0.3s ease; 
+}
+
+.event-form input:hover,
+.event-form select:hover {
+    background-color: #fff;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Custom styling for the select dropdown */
+.event-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M0,0 L10,0 L5,5 Z" fill="#ff009d"/></svg>'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+/* Add Event Button */
+.add-event-btn {
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.add-event-btn:hover {
+    background-color: #1E90FF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.add-event-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 9, 157, 0.5); 
+}
+
+.rbc-header-bg {
+    background-color: #ccc;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
