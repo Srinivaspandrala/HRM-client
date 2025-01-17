@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Leave.css';
 
 const LeaveForm = () => {
@@ -8,7 +8,7 @@ const LeaveForm = () => {
     const [toTime, setToTime] = useState('');
     const [leaveType, setLeaveType] = useState('');
     const [reason, setReason] = useState('');
-    const [balanceLeave, setBalanceLeave] = useState(5);
+    const [balanceLeave, setBalanceLeave] = useState(10);
     const [unpaidLeave, setUnpaidLeave] = useState(0);
     const [error, setError] = useState('');
 
@@ -31,14 +31,12 @@ const LeaveForm = () => {
     return (
         <div className="leave-form-container">
             <h2>Apply for Leave</h2>
-            <p>Leave Can be Applied 10Days before </p>
+            <p>NOTE :-<span>Leave Can be Applied 10Days before </span></p>
             <div className="balance-section">
                 <p>Balance Leave: {balanceLeave}</p>
                 <p>Unpaid Leave: {unpaidLeave}</p>
             </div>
             <form onSubmit={handleSubmit}>
-                
-                {/* Dates Section */}
                 <div className="date-time-container">
                     <div className="date-time-column">
                         <label>From Date</label>
@@ -50,7 +48,6 @@ const LeaveForm = () => {
                     </div>
                 </div>
 
-                {/* Times Section */}
                 <div className="date-time-container">
                     <div className="date-time-column">
                         <label>From Time</label>
@@ -62,17 +59,14 @@ const LeaveForm = () => {
                     </div>
                 </div>
 
-                {/* Leave Type and Reason */}
                 <label>Leave Type</label>
                 <select value={leaveType} onChange={(e) => setLeaveType(e.target.value)} required>
                     <option value="">Select Leave Type</option>
                     <option value="Paid Leave">Paid Leave</option>
                     <option value="Unpaid Leave">Unpaid Leave</option>
                 </select>
-
                 <label>Reason</label>
                 <textarea value={reason} onChange={(e) => setReason(e.target.value)} required />
-
                 <button type="submit" className="submit-btn">Submit</button>
                 {error && <p className="error-message">{error}</p>}
             </form>

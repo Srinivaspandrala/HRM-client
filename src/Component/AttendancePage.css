@@ -4,8 +4,9 @@
     background-color: #f0f4f8;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
     height: 100vh;
+    overflow: auto;
   }
   
   .page-title {
@@ -36,7 +37,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #0000001a;
   }
   
   .attendance-table {

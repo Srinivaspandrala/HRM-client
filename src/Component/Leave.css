@@ -1,15 +1,17 @@
 .leave-form-container {
-    padding: 20px;
+    padding: 25px;
     width: 50%;
-    border-radius: 20px;
+    height: 50%;
+    border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
     text-align: center;
-    margin: 30px 0px 20px 500px; /* Center the form horizontally */
+    background-color: #f0f4f8;
+    margin: 30px 0px 20px 550px; /* Center the form horizontally */
 }
 
 /* Header Styling */
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #4a90e2;
@@ -18,27 +20,25 @@ h2 {
 /* Balance Section Styling */
 .balance-section {
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
     color: #2e3d4d; /* Dark gray color for text */
 }
 
-/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 label {
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: bold;
     text-align: left;
     color: #2e3d4d; /* Dark gray text color */
 }
 
-/* Two-Column Layout for Dates and Times */
 .date-time-container {
     display: flex;
     justify-content: space-between;
@@ -59,8 +59,8 @@ input, select, textarea {
     outline: none;
     font-size: 1rem;
     transition: all 0.3s ease;
-    width: 70%;
-
+    width: 60%;
+    background-color: #f0f4f8;
     border-bottom: #2e3d4d 1px solid; /* Green border for inputs */
 }
 
