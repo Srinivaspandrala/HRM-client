@@ -15,10 +15,20 @@
 }
 
 .calendar-render{
-    margin: 5px 60px 50px auto;
+    margin: 5px 100px 50px auto;
     width: 70%;
 }
 
+.rbc-day-bg {
+    width: 10px;  /* Set a fixed width for the date cell */
+    height:100px; /* Set a fixed height to match the width */
+    padding: 0;   /* Remove any default padding */
+    display: flex; /* Use flexbox to center the date */
+    align-items: center; /* Vertically center the date text */
+    justify-content: center; /* Horizontally center the date text */
+}
+
+/* Style for the 'Today' button in the calendar header */
 .rbc-btn-group.rbc-today-btn {
     background-color: #007BFF;
     border: none;
@@ -31,6 +41,7 @@
     transition: 0.3s;
 }
 
+/* Hover effect for the 'Today' button */
 .rbc-btn-group.rbc-today-btn:hover {
     background-color: #1E90FF;
     font-weight: bold;

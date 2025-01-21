@@ -1,16 +1,15 @@
 import CalendarComponent from './Component/Calendar';
-import AttendancePage from './Component/AtttendancePage';
+import AttendancePage from './Component/Attendance';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LeaveForm from './Component/Leave';
 import Sidebar from './Component/Sidebar'
 import Home from './Component/Home';
-import LoginForm from './Component/LoginForm';
+import LoginForm from './Component/Login';
 import RegisterForm from './Component/RegisterForm';
 import Footer from './Component/Footer';
 import ProtectedRoute from './Component/ProtectedRoute'; // Import ProtectedRoute
 
 const App = () => {
-    
     return (
         <BrowserRouter>
             <Routes>

@@ -5,11 +5,9 @@
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
     text-align: center;
-    background-color: #f0f4f8;
-    margin: 30px 0px 20px 550px; /* Center the form horizontally */
+    margin: 30px 0px 20px 550px; 
 }
 
-/* Header Styling */
 h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -17,13 +15,12 @@ h2 {
     color: #4a90e2;
 }
 
-/* Balance Section Styling */
 .balance-section {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
-    color: #2e3d4d; /* Dark gray color for text */
+    color: #2e3d4d; 
 }
 
 form {
@@ -36,7 +33,7 @@ label {
     font-size: 14px;
     font-weight: bold;
     text-align: left;
-    color: #2e3d4d; /* Dark gray text color */
+    color: #2e3d4d; 
 }
 
 .date-time-container {
@@ -52,7 +49,6 @@ label {
     gap: 15px;
 }
 
-/* Input Styling */
 input, select, textarea {
     padding: 12px;
     border: none;
@@ -60,21 +56,20 @@ input, select, textarea {
     font-size: 1rem;
     transition: all 0.3s ease;
     width: 60%;
-    background-color: #f0f4f8;
-    border-bottom: #2e3d4d 1px solid; /* Green border for inputs */
+    background-color: #ffffff;
+    border-bottom: #2e3d4d 1px solid; 
 }
 
 input:focus, select:focus, textarea:focus {
-    border-bottom: 2px solid #4caf50; /* Emphasize input focus with green */
+    border-bottom: 2px solid #4caf50; 
 }
 
-/* Submit Button Styling */
 .submit-btn {
     padding: 10px;
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    background: linear-gradient( #4a90e2,#75a0ce); /* Green gradient for a lively effect */
+    background: linear-gradient( #4a90e2,#75a0ce); 
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -84,19 +79,17 @@ input:focus, select:focus, textarea:focus {
 
 .submit-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); 
 }
 
-/* Error Message Styling */
 .error-message {
-    color: #8bc34a; /* Red for error message to stand out */
+    color: #8bc34a; 
     font-size: 1.1rem;
     font-weight: bold;
     margin-top: 15px;
     animation: shake 0.5s ease-in-out;
 }
 
-/* Animations */
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }

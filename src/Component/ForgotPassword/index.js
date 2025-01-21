@@ -11,7 +11,7 @@ class ForgotPassword extends Component {
     email:'',
     showSubmitError: false,
     errorMsg: '',
-    redirectToHome: false, // Added to handle redirection
+    redirectToHome: false, 
     showpass:"password",
   };
 

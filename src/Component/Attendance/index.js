@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa'; 
-import './AttendancePage.css';
+import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+import './index.css';
 
 const AttendancePage = () => {
-  const [data, setData] = useState([]); 
+  const [data, setData] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,6 +36,7 @@ const AttendancePage = () => {
         
         const formattedData = responseData.attendanceLogStatus.map(entry => ({
           date: entry.Logdate,
+          time: entry.LogTime,
           leave: entry.LeaveStatus,
           effectiveHours: entry.EffectiveHours,
           grossHours: entry.GrossHours,
@@ -52,8 +53,12 @@ const AttendancePage = () => {
     fetchAttendanceData();
   }, []);
 
-  const handleNavigation = () => {
+  const handleNavigationAttendanceRequests = () => {
     navigate('/AttendanceRequest');
+  };
+
+  const handleNavigationAttendancelog = () => {
+    navigate('/attendancelogs');
   };
 
   return (
@@ -64,14 +69,15 @@ const AttendancePage = () => {
           <h3 className="info-title">Log & Request</h3>
         </div>
         <div className="button-container-right">
-          <button className="info-heading">Attendance Log</button>
-          <button className="info-heading" onClick={handleNavigation}>Attendance Requests</button>
+          <button className="info-heading" onClick={handleNavigationAttendancelog}>Attendance Log</button>
+          <button className="info-heading" onClick={handleNavigationAttendanceRequests}>Attendance Requests</button>
         </div>
       </div>
       <table className="attendance-table">
         <thead>
           <tr>
             <th>Date</th>
+            <th>Time</th>
             <th>Leave</th>
             <th>Effective Hours</th>
             <th>Gross Hours</th>
@@ -84,6 +90,7 @@ const AttendancePage = () => {
             data.map((entry, index) => (
               <tr key={index}>
                 <td>{entry.date}</td>
+                <td>{entry.time}</td>
                 <td>{entry.leave}</td>
                 <td>{entry.effectiveHours}</td>
                 <td>{entry.grossHours}</td>

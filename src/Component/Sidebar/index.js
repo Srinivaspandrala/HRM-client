@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { FaUser, FaCalendar, FaBell, FaCog, FaSignOutAlt, FaEnvelope, FaHome, FaClock, FaCalendarCheck, FaMoneyBill, FaBuilding, FaChevronDown, FaChevronUp, FaBars } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Sidebar.css';
+import './index.css';
 import { Navbar, Container, Nav, Dropdown } from 'react-bootstrap';
 
 const Sidebar = () => {

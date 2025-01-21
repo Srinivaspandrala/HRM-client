@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import './LoginForm.css';
+import './index.css';
 
 const LoginComponent = () => {
     const [email, setEmail] = useState('');

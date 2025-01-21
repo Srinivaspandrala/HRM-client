@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'; // Importing necessary lib
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap for styling
 import Cookies from 'js-cookie';
 
-import "./RegisterForm.css"; 
+import "./index.css"; 
 
 const RegisterForm = () => {
   // Define state using useState hook for the form fields

@@ -1,6 +1,6 @@
 import React from 'react';
 import Cookies from 'js-cookie'; // Import js-cookie
-import './Home.css';
+import './index.css';
 
 const Home = () => {
     const loginDate = Cookies.get('loginDate');
